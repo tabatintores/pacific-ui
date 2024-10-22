@@ -1,0 +1,1 @@
+export { default as PacificGeoLayout } from "@/lib-components/layouts/PacificGeoLayout.vue";
