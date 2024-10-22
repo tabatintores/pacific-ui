@@ -1,22 +1,37 @@
-<script setup lang="ts">
-
-</script>
-
 <template>
+  <PacificGeoLayout>
+    <template #header>
+      <el-page-header content="Pacific UI Test Header" />
+    </template>
 
+    <template #left>
+      <el-menu>
+        <el-menu-item index="1">Menu Item 1</el-menu-item>
+        <el-menu-item index="2">Menu Item 2</el-menu-item>
+        <el-menu-item index="3">Menu Item 3</el-menu-item>
+      </el-menu>
+    </template>
+
+    <template>
+      <el-card>
+        <h2>Main Content</h2>
+        <p>This is the main content area.</p>
+      </el-card>
+    </template>
+
+    <template #right>
+      <el-card>
+        <h2>Right Sidebar</h2>
+        <p>Additional info or actions.</p>
+      </el-card>
+    </template>
+
+    <template #footer>
+      <el-footer>Test Footer © 2024</el-footer>
+    </template>
+  </PacificGeoLayout>
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style>
+<script setup>
+import PacificGeoLayout from './lib-components/layouts/PacificGeoLayout.vue';
+</script>
